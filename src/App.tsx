@@ -4,7 +4,7 @@ import { Overview, Settings, Users, Layout } from "./pages";
 
 function App() {
   return (
-    <section className="h-screen w-screen bg-slate-700">
+    <section className="h-screen w-screen bg-slate-950">
       <Routes>
         <Route path={ROUTES.HOME} element={<Layout />}>
           <Route path={ROUTES.USERS} element={<Users />} />

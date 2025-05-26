@@ -8,7 +8,7 @@ interface ButtonProp {
 export const NavigationLink: FC<ButtonProp> = ({ children, clickHandler }) => {
   return (
     <div
-      className="bg-slate-700 w-full p-2 rounded-lg cursor-pointer text-white active:bg-slate-600"
+      className="bg-slate-800 w-full p-2 rounded-lg cursor-pointer text-white active:bg-slate-600 ring-1 ring-slate-700"
       onClick={clickHandler}
     >
       {children}
