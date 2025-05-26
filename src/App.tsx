@@ -1,3 +1,3 @@
 export const App = () => {
-  return <section className="">S</section>;
+  return <section className="h-screen w-screen">S</section>;
 };
