@@ -26,8 +26,8 @@ export const Table = <T,>({ data, columns }: TableProps<T>) => {
 
   return (
     <div className="p-4 overflow-x-auto">
-      <table className="min-w-full divide-y divide-slate-700 text-sm text-left text-white">
-        <thead className="bg-slate-800 text-slate-300 uppercase text-xs">
+      <table className="min-w-full divide-y divide-slate-700 text-sm text-left dark:text-white">
+        <thead className="dark:bg-slate-800 bg-slate-300 dark:text-slate-300 uppercase text-xs">
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
               {headerGroup.headers.map((header) => (
@@ -49,7 +49,7 @@ export const Table = <T,>({ data, columns }: TableProps<T>) => {
           {table.getRowModel().rows.map((row) => (
             <tr
               key={row.id}
-              className="hover:bg-slate-800 transition cursor-pointer active:bg-slate-700"
+              className="dark:hover:bg-slate-800 hover:bg-slate-300 transition cursor-pointer active:bg-slate-200 dark:active:bg-slate-700"
             >
               {row.getVisibleCells().map((cell) => (
                 <td key={cell.id} className="px-4 py-2">
