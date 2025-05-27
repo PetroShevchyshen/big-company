@@ -6,6 +6,7 @@ export const ROUTES = {
 };
 
 export const links: { link: string; label: string }[] = [
+  { link: ROUTES.HOME, label: "Home" },
   { link: ROUTES.USERS, label: "Users" },
   { link: ROUTES.OVERVIEW, label: "Overview" },
   { link: ROUTES.SETTINGS, label: "Settings" },

@@ -11,9 +11,6 @@ export const Users: FC = () => {
   }, [fetchUsers]);
   return (
     <div className="w-full h-full">
-      {/* {users.map((user) => (
-        <UserCard key={user.id} data={user} />
-      ))} */}
       <Table data={users} columns={userTableColumns} />
     </div>
   );
