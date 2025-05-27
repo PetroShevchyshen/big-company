@@ -1,7 +1,7 @@
 export const Home = () => {
   return (
     <div className="w-full h-full flex justify-center items-center dark:text-white">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 max-w-4xl">
         <h1 className="text-2xl font-bold text-center">
           Welcome to the our big company
         </h1>
