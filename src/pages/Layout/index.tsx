@@ -7,7 +7,7 @@ export const Layout = () => {
       <aside className="w-32 md:w-44 shrink-0 p-3">
         <Sidebar />
       </aside>
-      <main className="py-3">
+      <main className="w-full p-3">
         <Outlet />
       </main>
     </div>
