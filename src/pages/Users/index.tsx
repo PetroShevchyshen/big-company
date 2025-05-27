@@ -1,6 +1,7 @@
 import { useEffect, type FC } from "react";
 import { useUserStore } from "../../store/user-store";
-import { UserCard } from "../../components/UserCard";
+import { Table } from "../../components";
+import { userTableColumns } from "../../constants/table";
 
 export const Users: FC = () => {
   const { users, fetchUsers } = useUserStore();
@@ -9,10 +10,11 @@ export const Users: FC = () => {
     fetchUsers();
   }, [fetchUsers]);
   return (
-    <div className="w-full h-full grid gap-4 grid-cols-4">
-      {users.map((user) => (
+    <div className="w-full h-full">
+      {/* {users.map((user) => (
         <UserCard key={user.id} data={user} />
-      ))}
+      ))} */}
+      <Table data={users} columns={userTableColumns} />
     </div>
   );
 };
